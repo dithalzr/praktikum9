@@ -1,0 +1,55 @@
+<?php
+	include 'simpan_kontak.php';
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Kontak</title>
+</head>
+<body>
+
+<form action="simpan_kontak.php" method="POST">
+	<h1>Form Kontak</h1>
+
+	<label for="nama">Nama: </label>
+	<input type="text" id="nama" name="nama">
+	<br><br>
+
+	Jenis Kelamin:
+	<input type="radio" id="pria" value="pria" name="jkel">
+	<label for="pria">Pria</label>
+	<input type="radio" id="wanita" value="wanita" name="jkel">
+	<label for="wanita">Wanita</label>
+	<br><br>
+
+	<label for="email">Email: </label>
+	<input type="text" id="email" name="email">
+	<br><br>
+
+	<label for="alamat">Alamat: </label>
+	<input type="text" id="alamat" name="alamat">
+	<br><br>
+
+	Kota:
+	<select name="kota">
+		<option>Jakarta</option>
+		<option>Surabaya</option>
+		<option>Lamongan</option>
+		<option>Kediri</option>
+		<option>Samarinda</option>
+		<option>Balikpapan</option>
+		<option>Pasuruan</option>
+		<option>Lainnya</option>
+	</select>
+	<br><br>
+
+	Pesan:
+	<textarea name="pesan"></textarea>
+	<br><br>
+
+	<button type="submit" name="submit">Submit</button>
+</form>
+
+</body>
+</html>
